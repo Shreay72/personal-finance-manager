@@ -1,0 +1,158 @@
+.budgets-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.budget-form {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.budget-form h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+}
+
+.budgets-list {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.budgets-list h3 {
+  margin: 0 0 25px 0;
+  color: #333;
+}
+
+.budgets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.budget-card {
+  background: #f9f9f9;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.budget-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.budget-card.over-budget {
+  border-color: #F44336;
+  background: #ffebee;
+}
+
+.budget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.budget-header h4 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.btn-delete-small {
+  background: transparent;
+  border: none;
+  color: #999;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.btn-delete-small:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: #F44336;
+}
+
+.budget-amounts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.amount-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.amount-item .label {
+  font-size: 12px;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.amount-item .value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.amount-item .value.negative {
+  color: #F44336;
+}
+
+.amount-item .value.positive {
+  color: #4CAF50;
+}
+
+.budget-progress {
+  margin-top: 15px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4CAF50, #8BC34A);
+  transition: width 0.3s;
+}
+
+.progress-fill.over {
+  background: linear-gradient(90deg, #F44336, #E57373);
+}
+
+.progress-text {
+  font-size: 13px;
+  color: #666;
+  font-weight: 500;
+}
+
+.alert-message {
+  margin-top: 15px;
+  padding: 10px;
+  background: #F44336;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+}

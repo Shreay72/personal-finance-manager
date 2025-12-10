@@ -1,0 +1,171 @@
+.goals-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.goal-form {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.goal-form h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+}
+
+.goals-list {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.goals-list h3 {
+  margin: 0 0 25px 0;
+  color: #333;
+}
+
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.goal-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+  padding: 25px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.goal-card:hover {
+  transform: translateY(-5px);
+}
+
+.goal-card.complete {
+  background: linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%);
+}
+
+.goal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.goal-header h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.badge-complete {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.goal-amounts {
+  margin-bottom: 20px;
+}
+
+.amount-display {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.amount-display .separator {
+  margin: 0 8px;
+  opacity: 0.6;
+}
+
+.amount-display .target {
+  opacity: 0.8;
+}
+
+.deadline {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-top: 10px;
+}
+
+.goal-progress {
+  margin-bottom: 20px;
+}
+
+.progress-bar-large {
+  width: 100%;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-fill-large {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  transition: width 0.3s;
+  border-radius: 8px;
+}
+
+.progress-fill-large.complete {
+  background: white;
+}
+
+.progress-text-large {
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.goal-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-contribute {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.9);
+  color: #667eea;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-contribute:hover:not(:disabled) {
+  background: white;
+}
+
+.btn-contribute:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.goal-actions .btn-delete {
+  background: rgba(244, 67, 54, 0.9);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.goal-actions .btn-delete:hover {
+  background: #F44336;
+}
